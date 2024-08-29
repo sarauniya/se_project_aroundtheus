@@ -2,21 +2,22 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  border-radius: 10px;
-}
-
-.card__list {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(autofit, 282px);
-  grid-gap: 20px 17px;
-  padding: 0;
-  margin: 0;
 }
 
 .card__image {
   width: 282px;
   height: 282px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card__list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 20px 17px;
+  padding: 0;
+  margin: 0;
 }
 
 .card__description {
@@ -33,9 +34,21 @@
   border-bottom-right-radius: 10px;
 }
 
+.card__description h2 {
+  max-width: 219px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .card__like-button {
   background: transparent url(../images/like-inactive.svg) center no-repeat;
   width: 21px;
   height: 18px;
   border: none;
+}
+
+.card__like-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
 }

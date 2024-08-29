@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   padding-top: 40px;
+  box-sizing: border-box;
 }
 
 .profile__info {
@@ -10,6 +11,8 @@
     "title button"
     "descrption description";
   grid-template-columns: minmax(auto, 373px) auto;
+  align-items: baseline;
+  grid-gap: 7px 17px;
 }
 
 .profile__edit-button {
@@ -19,19 +22,33 @@
   grid-area: button;
 }
 
+.profile__edit-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 .profile__add-button {
   background: transparent url(../images/add-inactive.svg) center no-repeat;
   width: 150px;
+  min-width: 150px;
   height: 50px;
   margin-left: auto;
 }
 
+.profile__add-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
 .profile__title {
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 42px;
   line-height: 48px;
   font-weight: 500;
   grid-area: title;
   margin: 0;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .profile__description {
@@ -39,6 +56,9 @@
   line-height: 22px;
   font-weight: 400;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .profile__image {
@@ -48,4 +68,60 @@
   object-fit: cover;
   background-position: center;
   margin-right: 24px;
+}
+
+@media screen and (max-width: 775px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 282px;
+  }
+
+  .profile__title {
+    width: 100%;
+    text-align: center;
+    max-width: 282px;
+  }
+
+  .profile__description {
+    width: 100%;
+    text-align: center;
+    max-width: 282px;
+  }
+
+  .profile__add-button {
+    width: 100%;
+    max-width: 282px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__add-button {
+    margin-left: auto;
+  }
+
+  .profile__info {
+    padding: 10px;
+  }
+
+  .profile__title {
+    font-size: 22px;
+    max-width: 196px;
+  }
+
+  .profile__description {
+    font-size: 14px;
+    max-width: 196px;
+  }
+
+  .profile__edit-button {
+    width: 18px;
+    height: 18px;
+  }
 }
