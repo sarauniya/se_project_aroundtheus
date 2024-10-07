@@ -5,14 +5,21 @@
 }
 
 .page__content {
-  min-height: 100vh;
+  /* min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
+  padding: 0 19px;
 }
 
 .page__section {
   max-width: 880px;
-  width: 100%;
-  position: relative;
+  /* width: 100%;
+  position: relative; */
   margin: 0 auto;
+}
+
+@media screen and (max-width: 620px){
+  .page__content {
+    padding: 0;
+  }
 }
