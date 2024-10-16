@@ -17,3 +17,6 @@ Project 3: Around the U.S. features a 3-column photo set of Jacques Cousteau's e
 **Images**  
   <img src="./images/main-page.jpg" alt="main page view" width="640" >
   <img src="./images/mobile.jpg" alt="mobile view" width="320">
+
+**Video**
+* [Link to video on Google Drive] (https://drive.google.com/file/d/199rr1pXIy1OsmCNsv-1N-JLi4s4GRMAY/view?usp=drive_link)
