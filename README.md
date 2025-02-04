@@ -20,3 +20,7 @@ Project 3: Around the U.S. features a 3-column photo set of Jacques Cousteau's e
 
 **Video**
 * [Link to video on Google Drive] (https://drive.google.com/file/d/199rr1pXIy1OsmCNsv-1N-JLi4s4GRMAY/view?usp=drive_link)
+
+**GitHub**
+
+* [Link to GitHub pages] (https://github.com/sarauniya/se_project_aroundtheus)
